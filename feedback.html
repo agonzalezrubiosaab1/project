@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCE51ZNHQJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,20 +12,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="recipe ,risotto, ceviche, brownies, cook, pasta ">
+    <meta name="author" content="alejandra">
+    <meta name="description" content="recipes, cook-book">
     <title>Feedback/contact</title>
+    <link rel="stylesheet" type="text/css" href="idex.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <script>
+    
+         function myResponsiveFunction() 
+                    {
+                        var x = document.getElementById("mytopnav");
+                        if (x.className == "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    } 
+         /* YOu can add more JS here */ 
+          
+        </script>
+        <style>
+            form#feed {margin: auto;text-align: center;}
+            h4 {text-align: center;}
+        </style>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body>
-    <table>	  
-    
-        
-            <th><a id="sign" href="index.html"> <img id="im" src="images/IMG_7559.png" alt="sign" height="15"> Homepage </a></th>
-            <th><a href="sitemap.html" >Recipes</a></th>
-            <th><a id="red" href="feedback.html">Contact us</a></th>
-       </table>
+    <h1> Welcome to Ale's Cooking Blog <img src="images/favicon-32x32.png" alt="favicon"> </h1>
+    <div class="topnav" id="mytopnav">	  
+       <a href="index.html"> Homepage </a>
+       <a href="sitemap.html" >Recipes</a>
+    <a  href="feedback.html">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myResponsiveFunction()"></a>
+     </div>
+
        <div>
 <h1>Contact Information</h1>
 <h4> Email me: <a href="mailto:agonzalezrubiosaab1@babson.edu"> agonzalezrubiosaab1@babson.edu</a></h4>
 </div>
+<div class="content">
 <form method="GET" action="/process-data">
     <fieldset>
         <legend>Contact us:</legend>
@@ -53,7 +82,7 @@
 </fieldset>
 </form>
 <h1>We want to hear from you!</h1>
- <form>
+ <form id="feed">
     <div>
         <label for="cuisine">What is your favorite cuisine?</label>
 
@@ -67,6 +96,7 @@
     <div>
         Were the recipes clear and helpful?:
     </div>
+    <br>
     <div>
         <input type="radio" id="Very Much"name="quality">
         <label for="Very Much">Very Much</label>
@@ -78,6 +108,7 @@
         <input type="radio" id="NOt at all" name="quality">
         <label for="Not at all">Not at all</label>
     </div>
+    <br>
     <div>
        <label for="comments"> What recipes you would like to learn?:</label>
     </div>
@@ -91,6 +122,8 @@
 
     </div>
 
+
 </form>
+</div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCE51ZNHQJ"></script>
 <script>
@@ -13,17 +14,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="recipe ,risotto, ceviche, brownies, cook, pasta ">
+    <meta name="author" content="alejandra">
+    <meta name="description" content="recipes, cook-book">
     <title>Sitemap</title>
+    <link rel="stylesheet" type="text/css" href="idex.css"/> <script>
+        /* Your JavaScript goes here */
+         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+         function myResponsiveFunction() 
+                    {
+                        var x = document.getElementById("mytopnav");
+                        if (x.className == "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    } 
+         /* YOu can add more JS here */ 
+          
+        </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <table>	  
-    
-        
-        <th><a id="sign" href="index.html"> <img id="im" src="images/IMG_7559.png" alt="sign" height="15"> Homepage </a></th>
-        <th><a href="sitemap.html" >Recipes</a></th>
-        <th><a id="red" href="feedback.html">Contact us</a></th>
-   </table>
-   <div>
+    <h1> Welcome to Ale's Cooking Blog </h1>
+    <div class="topnav" id="mytopnav">	  
+       <a href="index.html"> Homepage </a>
+       <a href="sitemap.html" >Recipes</a>
+    <a  href="feedback.html">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myResponsiveFunction()"></a>
+     </div>
+   <div id="site">
     <table>
         <caption>Recipes by Cuisine</caption>
         <tr>
@@ -57,5 +80,7 @@
        </tr>
     </table>
     </div>
+    <p>"All intellectual property at this website is in the public domain or is the property of the site-owner." </p>
+    <p>I, Alejandra pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein."</p>
 </body>
 </html>

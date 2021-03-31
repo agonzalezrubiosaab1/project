@@ -13,21 +13,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="recipe ,risotto, ceviche, brownies, cook, pasta ">
+    <meta name="author" content="alejandra">
+    <meta name="description" content="recipes, cook-book">
     <title>Feta Pasta</title>
+    <link rel="stylesheet" type="text/css" href="idex.css"/>
+    <script>
+        /* Your JavaScript goes here */
+         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+         function myResponsiveFunction() 
+                    {
+                        var x = document.getElementById("mytopnav");
+                        if (x.className == "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    } 
+         /* YOu can add more JS here */ 
+          
+        </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <table>	  
-    
-        
-        <th><a id="sign" href="index.html"> <img id="im" src="images/IMG_7559.png" alt="sign" height="15"> Homepage </a></th>
-        <th><a href="sitemap.html" >Recipes</a></th>
-        <th><a id="red" href="feedback.html">Contact us</a></th>
-   </table>
+    <h1> Welcome to Ale's Cooking Blog </h1>
+    <div class="topnav" id="mytopnav">	  
+       <a href="index.html"> Homepage </a>
+       <a href="sitemap.html" >Recipes</a>
+    <a  href="feedback.html">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myResponsiveFunction()"></a>
+     </div>
    <div>
    <h1>Feta Pasta</h1> 
    <div>
     <img src="images/feta.jpg" alt="feta" title="feta pasta" height="300">
 </div>
+<div class="content">
    <h3>Ingredients</h3>
    <ul>
     <li>Grape tomatoes</li>
