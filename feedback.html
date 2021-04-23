@@ -127,8 +127,10 @@
 <script>
    function validation(){
        var myForm;
+       let name=document.getElementById("firstName").value;
+       let email=document.getElementById("email").value;
        myForm=document.getElementById("valid");
-       if (myForm.firstName.value==""){
+       if (myForm.name.value==""){
            alert("Please enter your name");
        }
        else if(myForm.email.value==""){
