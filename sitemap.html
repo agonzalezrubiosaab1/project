@@ -48,6 +48,9 @@
    <div id="site">
     <table>
         <caption>Recipes by Cuisine</caption>
+        <div>
+            <img id="ceviche">
+        </div>
         <tr>
         <th>Italian Cuisine</th>
         <th>Latin Cuisine</th>
@@ -81,5 +84,31 @@
     </div>
     <p>"All intellectual property at this website is in the public domain or is the property of the site-owner." </p>
     <p>I, Alejandra pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein."</p>
+    <script>
+        const slides = [
+          "images/4leches.jpg",
+          "images/brownies.jpg",
+          "images/ceviche.jpg",
+          "images/feta.jpg",
+        ];
+        
+        const tigerImage = document.getElementById("ceviche");
+    
+        let counter = 0;
+        let i = 0;
+    
+        function slideShow() {
+          if (i == slides.length) {
+            i = 0;
+          }
+          tigerImage.src = slides[i];
+          tigerImage.style.height = "300px";
+          i++;
+          counter++;
+          setTimeout(slideShow, 1000);
+        }
+    
+        document.querySelector("body").onload = slideShow;
+      </script>
 </body>
 </html>

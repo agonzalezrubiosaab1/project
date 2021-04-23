@@ -36,7 +36,7 @@
        
 
 </head>
-<body>
+<body onload=doSomething()>
     <h1> Welcome to Ale's Cooking Blog </h1>
     <div class="topnav" id="mytopnav">	  
        <a href="index.html"> Homepage </a>
@@ -46,12 +46,56 @@
      </div>
    
    <div class="bod">
-       <img src="images/wife.jpg" alt="cooking">
+       <img id="img" src="images/wife.jpg" alt="cooking">
     
-    <p id="one"> "As a college student, I understand how difficult it is to find easy and delicious recipes to cook with a low budget. It is my pleasure to share with you my favorite easy to make recipes."-Ale</p>
+    <p id="one"> </p>
+    <p id="two"></p>
     
     
    <button><a id="fun" href="sitemap.html">Let's Have some Fun in the Kitchen!</a> </button>
 </div>
+<script>
+
+    function text(){
+
+      let  text= document.getElementById("one");
+       text.innerText="“Real cooking is more about following your heart than following recipes.”";
+    };
+    function textOut(){
+        let  text= document.getElementById("one");
+       text.innerText="As a college student, I understand how difficult it is to find easy and delicious recipes to cook with a low budget. It is my pleasure to share with you my favorite easy to make recipes";
+
+    };
+
+
+    function changeImage(){
+        let img=document.getElementById("img");
+        img.src="images/power.png";
+    };
+
+    function reverseImage(){
+        let img=document.getElementById("img");
+        img.src="images/wife.jpg";
+    };
+    document.getElementById("img").onmouseout=reverseImage;
+     document.getElementById("img").onmouseover=changeImage;
+     document.getElementById("one").onmouseout=textOut;
+      document.getElementById("one").onmouseover=text;
+      
+      let counter = 3; 
+      function doSomething() {
+      
+        if (counter > 0) {
+          document.getElementById("two").innerHTML +=
+            "..." + counter;
+
+          counter--;
+          setTimeout(doSomething, 500);
+        } else {
+          document.getElementById("two").innerHTML += "...Lets have fun in the kitchen!";
+        }
+      }
+      document.getElementById("body").onload = doSomething;
+</script>
    </body>
 </html>
